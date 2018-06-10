@@ -1,0 +1,22 @@
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+  </head>
+
+<div class="navbar">
+<%= image_tag "applogo.png" %>
+</div>
+<br>
+
+<h2><%= @music.name %></h2>
+<h2><%= @music.journal %></h2>
+<h2><%= @music.age %></h2>
+
+
+
+
+
+
+
+<a href="/music/edit/<%= @music.id %>" >Edit</a>
+<a href="/music/destroy/<%= @music.id %>" >Delete</a>
+<a href="/">Back to Home</a>

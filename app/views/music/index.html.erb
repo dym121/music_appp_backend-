@@ -1,0 +1,20 @@
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+  </head>
+
+<div class="navbar">
+<%= image_tag "applogo.png" %>
+</div>
+<br>
+   <% @musics.each do |music| %>
+ 
+    <div>
+        <a href="/music/show/<%= music.id %>"><%= music.name %></a>
+        <p><%= music.journal %></p>
+        <p><%= music.age %></p>
+    </div>
+    <hr>
+  <% end %>
+  <div>
+  <a href="/music/new">Add New Post</a>
+  </div>
