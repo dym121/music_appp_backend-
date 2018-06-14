@@ -6,15 +6,26 @@
 <%= image_tag "applogo.png" %>
 </div>
 <br>
+
+<div>
+    <h3>
+        Welcome to Music Hunt! This app was created to connect music 
+        artists and well-known music industry exceutives, in order to take the 
+        artists' career to the next level. Please begin to post on the stream so
+        that industry pros and possibly other artists can connect with you!
+    </h3>
+</div>
+ <div>
+  <a href="/music/new">Add New Post</a>
+  </div>
+
+
    <% @musics.each do |music| %>
- 
     <div>
         <a href="/music/show/<%= music.id %>"><%= music.name %></a>
         <p><%= music.journal %></p>
         <p><%= music.age %></p>
     </div>
-    <hr>
+  <hr>
   <% end %>
-  <div>
-  <a href="/music/new">Add New Post</a>
-  </div>
+ 

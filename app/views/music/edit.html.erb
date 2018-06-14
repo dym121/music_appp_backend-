@@ -6,13 +6,24 @@
 <%= image_tag "applogo.png" %>
 </div>
 <br>
+<div>
+  <h3>You can edit someone else's or your own post. By editing someone else's 
+  post, you can provide them with your contact information or just simply 
+  comment on their post.</h3>
+</div>
 
   <form action="/music/update/<%= @music.id %>">
-     <input name="name" type="text" placeholder="What's your name?">
-  <input name="journal" type="text" placeholder="Artist or Industry Pro?">
- <input name="journal" type="text" placeholder="What's Happpening?">
-    <input type="submit" value="EDIT">
-
+    <br>
+     <input class="hello" name="name" type="text" placeholder="What's your name?">
+     <br>
+  <input class="hello" name="journal" type="text" placeholder="Artist or Industry Pro?">
+  <br>
+ <input class="hello" name="journal" type="text" placeholder="What's Happpening?">
+ <br>
+    <input class="hello" type="submit" value="Edit">
+    <br>
   </form>
+  
+  
   <br>
     <a href="/" class="simple-link">Back to Home</a>

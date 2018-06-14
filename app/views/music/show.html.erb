@@ -6,17 +6,15 @@
 <%= image_tag "applogo.png" %>
 </div>
 <br>
-
+<div class="fix">
 <h2><%= @music.name %></h2>
 <h2><%= @music.journal %></h2>
 <h2><%= @music.age %></h2>
+</div>
 
-
-
-
-
-
-
-<a href="/music/edit/<%= @music.id %>" >Edit</a>
-<a href="/music/destroy/<%= @music.id %>" >Delete</a>
-<a href="/">Back to Home</a>
+<a href="/music/edit/<%= @music.id %>" class="edit">Edit</a>
+<br>
+<a href="/music/destroy/<%= @music.id %>"class="edit" >Delete</a>
+<br>
+<a href="/" class="edit">Back to Home</a>
+<br>
